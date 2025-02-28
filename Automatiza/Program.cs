@@ -1,6 +1,3 @@
-
-
-using Automatiza.Visual;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Automatiza
@@ -17,17 +14,16 @@ namespace Automatiza
 
             var serviceProvider = ConfigureServices();
 
-            var mainForm = serviceProvider.GetRequiredService<Form_Main>();
+            var mainForm = serviceProvider.GetRequiredService<Frm_inicio>();
 
-            Application.Run(new Form_Main());
-            //Application.Run(new Frm_inicio());
+            Application.Run(new Frm_inicio());
         }
 
         private static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
 
-            services.AddSingleton<Form_Main>();
+            services.AddSingleton<Frm_inicio>();
 
             return services.BuildServiceProvider();
         }

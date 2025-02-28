@@ -7,124 +7,38 @@ namespace Automatiza.Controle
 
     public class ControleInicio
     {
-        
+
         public static void ValidaOpcoes(Frm_inicio frm)
         {
 
-            if (frm.cb_concecao.Checked == true)
-            {
-                PublicVar.Status = "Conceder acessos";
-
-                //assistente
-                if (frm.RB_1.Checked == true)
-                {
-                    PublicVar.Caminho = "Y:\\- Installs - FILIAIS\\Gabrielle\\Permissões\\Concecao\\Assistente atendimento.xlsx";
-                    PublicVar.Escolha = "1";
-                }
-                //caixa tesoureiro
-                if (frm.RB_2.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Tesoureiro.xlsx";
-                    PublicVar.Escolha = "2";
-                }
-                //caixa
-                if (frm.RB_3.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Caixa.xlsx";
-                    PublicVar.Escolha = "3";
-                }
-                //estagiario
-                if (frm.RB_4.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Estagiário PA.xlsx";
-                    PublicVar.Escolha = "4";
-                }
-                //gerente adm
-                if (frm.RB_5.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Gerente ADM.xlsx";
-                    PublicVar.Escolha = "5";
-                }
-                //gerente de contas
-                if (frm.RB_7.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Gerente PA.xlsx";
-                    PublicVar.Escolha = "7";
-                }
-                //gerente de contas
-                if (frm.RB_8.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\Gerente Contas.xlsx";
-                    PublicVar.Escolha = "8";
-                }
-                
-            }
-            else if (frm.cb_revoga.Checked == true)
-            {
-                PublicVar.Status = "Revogar Acessos";
-                if (frm.RB_1.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Assistente atendimento.xlsx";
-                    PublicVar.Escolha = "1";
-                }
-                if (frm.RB_2.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Tesoureiro.xlsx";
-                    PublicVar.Escolha = "2";
-                }
-                if (frm.RB_3.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Caixa.xlsx";
-                    PublicVar.Escolha = "3";
-                }
-                if (frm.RB_4.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Estagiário PA.xlsx";
-                    PublicVar.Escolha = "4";
-                }
-                if (frm.RB_5.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Gerente ADM.xlsx";
-                    PublicVar.Escolha = "5";
-                }
-                if (frm.RB_7.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Gerente PA.xlsx";
-                    PublicVar.Escolha = "7";
-                }
-                if (frm.RB_8.Checked == true)
-                {
-                    PublicVar.Caminho = @"Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\Gerente Contas.xlsx";
-                    PublicVar.Escolha = "8";
-                }
-            }
+            
         }
 
         public static void DigitaBase(Frm_inicio frm)
         {
 
 
-            if (frm.SelectBase.Checked == true)
+            if (frm.cb_AlteraBasePa.Checked == true)
             {
-                frm.LB_base.Visible = true;
-                frm.TB_base.Visible = true;
+
+                frm.tb_BasePA.Visible = true;
 
             }
             else
             {
-                frm.LB_base.Visible = false;
-                frm.TB_base.Visible = false;
+
+                frm.tb_BasePA.Visible = false;
 
             }
         }
-    public static void CriaPlanilha(Frm_inicio frm)
-    {
-            
+        public static void CriaPlanilha(Frm_inicio frm)
+        {
+
             PublicVar.UsrSisbr = frm.TB_name.Text;
 
-            if (frm.SelectBase.Checked)
+            if (frm.cb_AlteraBasePa.Checked)
             {
-                PublicVar.BasePA = frm.TB_base.Text;
+                PublicVar.BasePA = frm.tb_BasePA.Text;
             }
             else
             {
@@ -189,7 +103,7 @@ namespace Automatiza.Controle
             PublicVar.CaminhoArquivo = "";
             PublicVar.identificador = frm.TB_identifica.Text;
 
-            
+
 
             if (frm.cb_concecao.Checked == true)
             {
@@ -203,7 +117,7 @@ namespace Automatiza.Controle
                     Directory.CreateDirectory(caminhoPasta);
                 }
                 xls.SaveAs(PublicVar.CaminhoArquivo);
-                
+
             }
             else if (frm.cb_revoga.Checked == true)
             {
@@ -220,14 +134,14 @@ namespace Automatiza.Controle
             }
 
         }
-public static void LimpaSelecao(Frm_inicio frm)
+        public static void LimpaSelecao(Frm_inicio frm)
         {
             frm.cb_revoga.Checked = false;
             frm.cb_concecao.Checked = false;
             frm.TB_name.Clear();
-            frm.TB_base.Clear();
+            frm.tb_BasePA.Clear();
 
-            
+
         }
 
 

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PathPlanilhasConcecao" xml:space="preserve">
+    <value>Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\</value>
+  </data>
+  <data name="PathPlanilhasRevogacao" xml:space="preserve">
+    <value>Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\</value>
+  </data>
   <data name="Url_Webhook" xml:space="preserve">
     <value>https://cocred.webhook.office.com/webhookb2/4751af8d-bcd9-4825-9fc0-a902e542538a@7ec496a7-d14b-4f3b-a48c-8b7478b1e3e6/IncomingWebhook/83e006a7f9da4f40aee0d245a7bfaad3/5202d1a9-ced3-4964-8081-7d0305fcf7b8</value>
   </data>
