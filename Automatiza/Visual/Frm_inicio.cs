@@ -1,21 +1,19 @@
 using Automatiza.Controle;
 using Automatiza.Enum;
 using Automatiza.Model;
-using Automatiza.Services.Interface;
-using System.Text;
+using Automatiza.Services;
 
 namespace Automatiza
 {
     public partial class Frm_inicio : Form
     {
 
-        private IEnviaMensagemService _enviaMensagemService;
+        private EnviaMensagemService _enviaMensagemService;
         private UsuarioModel _usuarioModel;
 
-        public Frm_inicio(IEnviaMensagemService enviaMensagemService)
+        public Frm_inicio()
         {
-            _enviaMensagemService = enviaMensagemService;
-
+            
             InitializeComponent();
             LoadComboBox();
         }
@@ -84,14 +82,15 @@ namespace Automatiza
         private void btnGerarPlanilha_Click(object sender, EventArgs e)
         {
             GerarListaUsuarios();
-            _enviaMensagemService.EnviaMensagem(_usuarioModel);
+            GerarPlanilha();
+            //_enviaMensagemService = new EnviaMensagemService(_usuarioModel);
 
         }
 
         private void GerarPlanilha()
         {
-            CriarPlanilhaControl criarPlanilhaControl = new CriarPlanilhaControl(_usuarioModel);
-            criarPlanilhaControl.DefinePathPlanilhaModelo(cb_concecao.Checked);
+            CriarPlanilhaControl criarPlanilhaControl = new CriarPlanilhaControl(_usuarioModel, cb_concecao.Checked);
+            criarPlanilhaControl.CriaPlanilha();
         }
 
         private void GerarListaUsuarios()
@@ -101,7 +100,7 @@ namespace Automatiza
                 UsuarioSisbr = tb_usuarioSisbr.Text,
                 CargoAcesso = (CargosEnum)cb_cargoAcesso.SelectedValue,
                 NomeIdentificador = TB_identifica.Text,
-                BasePA = int.Parse(tb_BasePA.Text)
+                BasePA = tb_BasePA.Text
             };
 
         }

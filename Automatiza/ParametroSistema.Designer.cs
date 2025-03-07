@@ -61,20 +61,119 @@ namespace Automatiza {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C21:C62.
         /// </summary>
-        internal static string PathPlanilhasConcecao {
+        internal static string CelulasAssistenAtendimento {
             get {
-                return ResourceManager.GetString("PathPlanilhasConcecao", resourceCulture);
+                return ResourceManager.GetString("CelulasAssistenAtendimento", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C13:C42.
         /// </summary>
-        internal static string PathPlanilhasRevogacao {
+        internal static string CelulasCaixa {
             get {
-                return ResourceManager.GetString("PathPlanilhasRevogacao", resourceCulture);
+                return ResourceManager.GetString("CelulasCaixa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C14:C48.
+        /// </summary>
+        internal static string CelulasCaixaTesoureiro {
+            get {
+                return ResourceManager.GetString("CelulasCaixaTesoureiro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C9:C13.
+        /// </summary>
+        internal static string CelulasCaixaXTesoureiro {
+            get {
+                return ResourceManager.GetString("CelulasCaixaXTesoureiro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C14:C48.
+        /// </summary>
+        internal static string CelulasEstagiario {
+            get {
+                return ResourceManager.GetString("CelulasEstagiario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C16:C60.
+        /// </summary>
+        internal static string CelulasGerenteAdministrativo {
+            get {
+                return ResourceManager.GetString("CelulasGerenteAdministrativo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C24:C74.
+        /// </summary>
+        internal static string CelulasGerenteContas {
+            get {
+                return ResourceManager.GetString("CelulasGerenteContas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C14:C48.
+        /// </summary>
+        internal static string CelulasGerenteContasXGerentePA {
+            get {
+                return ResourceManager.GetString("CelulasGerenteContasXGerentePA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C25:C74.
+        /// </summary>
+        internal static string CelulasGerentePA {
+            get {
+                return ResourceManager.GetString("CelulasGerentePA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a C8:C11.
+        /// </summary>
+        internal static string CelulasTesoureitoXGerenteAdm {
+            get {
+                return ResourceManager.GetString("CelulasTesoureitoXGerenteAdm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Z:\Suporte\- GESTÃO DE ACESSOS\Clayton\conceção\.
+        /// </summary>
+        internal static string PathPlanilhasBaseConcecao {
+            get {
+                return ResourceManager.GetString("PathPlanilhasBaseConcecao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Z:\Suporte\- GESTÃO DE ACESSOS\Clayton\Revogação\.
+        /// </summary>
+        internal static string PathPlanilhasBaseRevogacao {
+            get {
+                return ResourceManager.GetString("PathPlanilhasBaseRevogacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Z:\Suporte\- GESTÃO DE ACESSOS\CCS-grupos-fluxos\Concessão\.
+        /// </summary>
+        internal static string PathSaveSheet {
+            get {
+                return ResourceManager.GetString("PathSaveSheet", resourceCulture);
             }
         }
         

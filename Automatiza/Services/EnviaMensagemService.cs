@@ -1,14 +1,12 @@
 ﻿using Automatiza.Model;
-using Automatiza.Services.Interface;
 using System.Text;
 
 namespace Automatiza.Services
 {
-    public class EnviaMensagemService : IEnviaMensagemService
+    public class EnviaMensagemService
     {
-        public void EnviaMensagem(UsuarioModel usuario)
+        public EnviaMensagemService(UsuarioModel usuario)
         {
-
             string webhookUrl = ParametroSistema.Url_Webhook;
             string message = "Aprovar grupos do usuário (a): " + usuario.UsuarioSisbr + " conforme - " + usuario.NomeIdentificador;
             bool mensagemEnviada = false;

@@ -117,11 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PathPlanilhasConcecao" xml:space="preserve">
-    <value>Y:\- Installs - FILIAIS\Gabrielle\Permissões\Concecao\</value>
+  <data name="CelulasAssistenAtendimento" xml:space="preserve">
+    <value>C21:C62</value>
   </data>
-  <data name="PathPlanilhasRevogacao" xml:space="preserve">
-    <value>Y:\- Installs - FILIAIS\Gabrielle\Permissões\revogação\</value>
+  <data name="CelulasCaixa" xml:space="preserve">
+    <value>C13:C42</value>
+  </data>
+  <data name="CelulasCaixaTesoureiro" xml:space="preserve">
+    <value>C14:C48</value>
+  </data>
+  <data name="CelulasCaixaXTesoureiro" xml:space="preserve">
+    <value>C9:C13</value>
+  </data>
+  <data name="CelulasEstagiario" xml:space="preserve">
+    <value>C14:C48</value>
+  </data>
+  <data name="CelulasGerenteAdministrativo" xml:space="preserve">
+    <value>C16:C60</value>
+  </data>
+  <data name="CelulasGerenteContas" xml:space="preserve">
+    <value>C24:C74</value>
+  </data>
+  <data name="CelulasGerenteContasXGerentePA" xml:space="preserve">
+    <value>C14:C48</value>
+  </data>
+  <data name="CelulasGerentePA" xml:space="preserve">
+    <value>C25:C74</value>
+  </data>
+  <data name="CelulasTesoureitoXGerenteAdm" xml:space="preserve">
+    <value>C8:C11</value>
+  </data>
+  <data name="PathPlanilhasBaseConcecao" xml:space="preserve">
+    <value>Z:\Suporte\- GESTÃO DE ACESSOS\Clayton\conceção\</value>
+  </data>
+  <data name="PathPlanilhasBaseRevogacao" xml:space="preserve">
+    <value>Z:\Suporte\- GESTÃO DE ACESSOS\Clayton\Revogação\</value>
+  </data>
+  <data name="PathSaveSheet" xml:space="preserve">
+    <value>Z:\Suporte\- GESTÃO DE ACESSOS\CCS-grupos-fluxos\Concessão\</value>
   </data>
   <data name="Url_Webhook" xml:space="preserve">
     <value>https://cocred.webhook.office.com/webhookb2/4751af8d-bcd9-4825-9fc0-a902e542538a@7ec496a7-d14b-4f3b-a48c-8b7478b1e3e6/IncomingWebhook/83e006a7f9da4f40aee0d245a7bfaad3/5202d1a9-ced3-4964-8081-7d0305fcf7b8</value>
